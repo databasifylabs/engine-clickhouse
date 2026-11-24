@@ -1,0 +1,18 @@
+name: refresh
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    uses: databasifylabs/engine-sdk/.github/workflows/engine-refresh.yml@f88d91123733b684b0ec19a54a361b5feab5f752
+    with:
+      engine: clickhouse
+      versions-file: versions.json

@@ -1,0 +1,6 @@
+{
+  "processes": [
+    {"name": "server", "enabled": true, "user": "clickhouse", "restart": "always", "restartSec": "2s", "stopTimeout": "60s",
+     "argv": ["clickhouse-server", "--config-file=/etc/clickhouse-server/config.xml"]}
+  ]
+}

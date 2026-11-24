@@ -1,0 +1,17 @@
+name: images
+on:
+  push:
+    branches: ["**"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
+concurrency:
+  group: images-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  images:
+    uses: databasifylabs/engine-sdk/.github/workflows/engine-images.yml@f88d91123733b684b0ec19a54a361b5feab5f752
+    with:
+      engine: clickhouse
+      versions-file: versions.json
