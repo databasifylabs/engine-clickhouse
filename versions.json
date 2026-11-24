@@ -12,11 +12,11 @@
         "digest": "sha256:f467bd4517a270c55c616ae9ad95eb53dd8f363ec9e0134b7cef0057a4243dae"
       },
       "packages": {
-        "procps": "0",
-        "iproute2": "0",
-        "jq": "0",
-        "curl": "0",
-        "openssl": "0"
+        "procps": "2:3.3.17-6ubuntu2.1",
+        "iproute2": "5.15.0-1ubuntu2.2",
+        "jq": "1.6-2.1ubuntu3.2",
+        "curl": "7.81.0-1ubuntu1.30",
+        "openssl": "3.0.2-0ubuntu1.30"
       }
     },
     "clickhouse-26.8": {
@@ -29,11 +29,11 @@
         "digest": "sha256:7a5c190c9cc314f703631bfe7d3ccc03a2e79fddc6ca5310d54fa88dd50e6136"
       },
       "packages": {
-        "procps": "0",
-        "iproute2": "0",
-        "jq": "0",
-        "curl": "0",
-        "openssl": "0"
+        "procps": "2:3.3.17-6ubuntu2.1",
+        "iproute2": "5.15.0-1ubuntu2.2",
+        "jq": "1.6-2.1ubuntu3.2",
+        "curl": "7.81.0-1ubuntu1.30",
+        "openssl": "3.0.2-0ubuntu1.30"
       }
     }
   }
